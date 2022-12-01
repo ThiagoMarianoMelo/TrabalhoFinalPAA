@@ -1,0 +1,15 @@
+C:\Faculdade\TrabalhoFinalPAA\Codigo\Exercicio1\AlgoritmoGuloso\obj\Debug\net6.0\AlgoritmoGuloso.csproj.AssemblyReference.cache
+C:\Faculdade\TrabalhoFinalPAA\Codigo\Exercicio1\AlgoritmoGuloso\obj\Debug\net6.0\AlgoritmoGuloso.GeneratedMSBuildEditorConfig.editorconfig
+C:\Faculdade\TrabalhoFinalPAA\Codigo\Exercicio1\AlgoritmoGuloso\obj\Debug\net6.0\AlgoritmoGuloso.AssemblyInfoInputs.cache
+C:\Faculdade\TrabalhoFinalPAA\Codigo\Exercicio1\AlgoritmoGuloso\obj\Debug\net6.0\AlgoritmoGuloso.AssemblyInfo.cs
+C:\Faculdade\TrabalhoFinalPAA\Codigo\Exercicio1\AlgoritmoGuloso\obj\Debug\net6.0\AlgoritmoGuloso.csproj.CoreCompileInputs.cache
+C:\Faculdade\TrabalhoFinalPAA\Codigo\Exercicio1\AlgoritmoGuloso\bin\Debug\net6.0\AlgoritmoGuloso.exe
+C:\Faculdade\TrabalhoFinalPAA\Codigo\Exercicio1\AlgoritmoGuloso\bin\Debug\net6.0\AlgoritmoGuloso.deps.json
+C:\Faculdade\TrabalhoFinalPAA\Codigo\Exercicio1\AlgoritmoGuloso\bin\Debug\net6.0\AlgoritmoGuloso.runtimeconfig.json
+C:\Faculdade\TrabalhoFinalPAA\Codigo\Exercicio1\AlgoritmoGuloso\bin\Debug\net6.0\AlgoritmoGuloso.dll
+C:\Faculdade\TrabalhoFinalPAA\Codigo\Exercicio1\AlgoritmoGuloso\bin\Debug\net6.0\AlgoritmoGuloso.pdb
+C:\Faculdade\TrabalhoFinalPAA\Codigo\Exercicio1\AlgoritmoGuloso\obj\Debug\net6.0\AlgoritmoGuloso.dll
+C:\Faculdade\TrabalhoFinalPAA\Codigo\Exercicio1\AlgoritmoGuloso\obj\Debug\net6.0\refint\AlgoritmoGuloso.dll
+C:\Faculdade\TrabalhoFinalPAA\Codigo\Exercicio1\AlgoritmoGuloso\obj\Debug\net6.0\AlgoritmoGuloso.pdb
+C:\Faculdade\TrabalhoFinalPAA\Codigo\Exercicio1\AlgoritmoGuloso\obj\Debug\net6.0\AlgoritmoGuloso.genruntimeconfig.cache
+C:\Faculdade\TrabalhoFinalPAA\Codigo\Exercicio1\AlgoritmoGuloso\obj\Debug\net6.0\ref\AlgoritmoGuloso.dll
