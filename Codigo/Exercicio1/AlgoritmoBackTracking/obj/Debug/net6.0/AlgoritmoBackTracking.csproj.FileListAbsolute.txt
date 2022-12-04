@@ -1,0 +1,15 @@
+C:\Faculdade\TrabalhoFinalPAA\Codigo\Exercicio1\AlgoritmoBackTracking\bin\Debug\net6.0\AlgoritmoBackTracking.exe
+C:\Faculdade\TrabalhoFinalPAA\Codigo\Exercicio1\AlgoritmoBackTracking\bin\Debug\net6.0\AlgoritmoBackTracking.deps.json
+C:\Faculdade\TrabalhoFinalPAA\Codigo\Exercicio1\AlgoritmoBackTracking\bin\Debug\net6.0\AlgoritmoBackTracking.runtimeconfig.json
+C:\Faculdade\TrabalhoFinalPAA\Codigo\Exercicio1\AlgoritmoBackTracking\bin\Debug\net6.0\AlgoritmoBackTracking.dll
+C:\Faculdade\TrabalhoFinalPAA\Codigo\Exercicio1\AlgoritmoBackTracking\bin\Debug\net6.0\AlgoritmoBackTracking.pdb
+C:\Faculdade\TrabalhoFinalPAA\Codigo\Exercicio1\AlgoritmoBackTracking\obj\Debug\net6.0\AlgoritmoBackTracking.csproj.AssemblyReference.cache
+C:\Faculdade\TrabalhoFinalPAA\Codigo\Exercicio1\AlgoritmoBackTracking\obj\Debug\net6.0\AlgoritmoBackTracking.GeneratedMSBuildEditorConfig.editorconfig
+C:\Faculdade\TrabalhoFinalPAA\Codigo\Exercicio1\AlgoritmoBackTracking\obj\Debug\net6.0\AlgoritmoBackTracking.AssemblyInfoInputs.cache
+C:\Faculdade\TrabalhoFinalPAA\Codigo\Exercicio1\AlgoritmoBackTracking\obj\Debug\net6.0\AlgoritmoBackTracking.AssemblyInfo.cs
+C:\Faculdade\TrabalhoFinalPAA\Codigo\Exercicio1\AlgoritmoBackTracking\obj\Debug\net6.0\AlgoritmoBackTracking.csproj.CoreCompileInputs.cache
+C:\Faculdade\TrabalhoFinalPAA\Codigo\Exercicio1\AlgoritmoBackTracking\obj\Debug\net6.0\AlgoritmoBackTracking.dll
+C:\Faculdade\TrabalhoFinalPAA\Codigo\Exercicio1\AlgoritmoBackTracking\obj\Debug\net6.0\refint\AlgoritmoBackTracking.dll
+C:\Faculdade\TrabalhoFinalPAA\Codigo\Exercicio1\AlgoritmoBackTracking\obj\Debug\net6.0\AlgoritmoBackTracking.pdb
+C:\Faculdade\TrabalhoFinalPAA\Codigo\Exercicio1\AlgoritmoBackTracking\obj\Debug\net6.0\AlgoritmoBackTracking.genruntimeconfig.cache
+C:\Faculdade\TrabalhoFinalPAA\Codigo\Exercicio1\AlgoritmoBackTracking\obj\Debug\net6.0\ref\AlgoritmoBackTracking.dll

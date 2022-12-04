@@ -42,14 +42,14 @@ internal class Program{
     static void Main(String[] args){
         var listaRotas = new List<Rota>();
         //preenchimento com rotas aleatorias
-        listaRotas.Add(new Rota("Rota1", 80));
-        listaRotas.Add(new Rota("Rota2", 25));
-        listaRotas.Add(new Rota("Rota3", 60));
-        listaRotas.Add(new Rota("Rota4", 50));
-        listaRotas.Add(new Rota("Rota5", 5));
-        listaRotas.Add(new Rota("Rota6", 11));
-        listaRotas.Add(new Rota("Rota7", 31));
-        listaRotas.Add(new Rota("Rota8", 33));
+        listaRotas.Add(new Rota("Rota1", 80)); // 
+        listaRotas.Add(new Rota("Rota2", 25)); //
+        listaRotas.Add(new Rota("Rota3", 60)); //
+        listaRotas.Add(new Rota("Rota4", 50)); //
+        listaRotas.Add(new Rota("Rota5", 5)); //
+        listaRotas.Add(new Rota("Rota6", 11)); //
+        listaRotas.Add(new Rota("Rota7", 31)); // 
+        listaRotas.Add(new Rota("Rota8", 33)); //
         listaRotas.Add(new Rota("Rota9", 100));
 
         var listaCaminhoes = new List<Caminhao>();
@@ -63,24 +63,64 @@ internal class Program{
         var stopwatch = new Stopwatch();
         stopwatch.Start();
 
-        //Primeiro é necessario ordenar o vetor pelo km de forma descrescente ou crescente;
-        var listaRotasOrdenado = listaRotas.OrderByDescending( r => r.comprimentoRota);
-        var i = 0;
-        foreach(var rota in listaRotasOrdenado){
-            listaCaminhoes.ElementAt(i).rotaCaminhao.Add(rota);
-            listaCaminhoes.ElementAt(i).totalRota += rota.comprimentoRota;
-        }
+        //Melhor solucao atual
+        int distanciaEntreMaxAndMinRotas = 395; //Seria colocar todas rotas no primeiro caminhão assim como no guloso
 
-        stopwatch.Stop();
+        //O dado de comparacao sera olhar a diferenca entre a maior rota em km e a menor, como queremos minimzar a diferenca entre
+        //as rotas basta buscar onde essa diferenca for a minima possivel
 
-        foreach (var caminhao in listaCaminhoes){
-            Console.WriteLine($"Caminhao: {caminhao.identificador} total Km: {caminhao.totalRota}");
-        //Resposta baseada em guloso se mostra ruim pois ignora circustancias e apenas insere rota no caminhao
-        //Ele apenas irá inserir tudo no primeiro caminhao, tendo em vista que nao há limite de km rodados por caminhao
+        var listaRotasOrdenado = listaRotas;
+        int pontoDeInicio = 0;
+        int i = pontoDeInicio; //marcador para ajudar no resete da lista
+
+        foreach (var rotas in listaRotasOrdenado){
+            for (int j = 0; j < listaCaminhoes.Count(); j++)
+            {   var caminhao = listaCaminhoes.ElementAt(j);
+                var novoTotal = caminhao.totalRota + rotas.comprimentoRota;
+                if(novoTotal - findMinRota(listaCaminhoes) <= distanciaEntreMaxAndMinRotas || caminhao.totalRota == 0 ){
+                    caminhao.rotaCaminhao.Add(rotas);
+                    caminhao.totalRota += rotas.comprimentoRota;
+                    distanciaEntreMaxAndMinRotas = findMaxRota(listaCaminhoes) - findMinRota(listaCaminhoes);
+                    j = listaCaminhoes.Count();
+                }
+                 i++;
+                if(i == listaCaminhoes.Count()){
+                pontoDeInicio ++;
+                i = 0;
+                }
+            }
         }
 
         Console.WriteLine($"Tempo de execucao: {stopwatch.ElapsedMilliseconds}");
         //Media de 1 milisegundo
+
+        foreach (var caminhao in listaCaminhoes)
+        {
+            Console.WriteLine($"{caminhao.identificador}: {caminhao.totalRota}");
+        }
+    }
+
+
+    private static int findMinRota(List<Caminhao> caminhoes){
+        int minRoute = 999999;
+        foreach (var caminhao in caminhoes)
+        {
+            if(caminhao.totalRota < minRoute) minRoute = caminhao.totalRota;
+        }
+
+        return minRoute;
+    }
+
+        private static int findMaxRota(List<Caminhao> caminhoes){
+        int maxRoute = 0;
+        foreach (var caminhao in caminhoes)
+        {
+            if(caminhao.totalRota > maxRoute) maxRoute = caminhao.totalRota;
+        }
+
+        return maxRoute;
     }
 }
+
+
 
