@@ -1,7 +1,7 @@
 ﻿
 using System.Diagnostics;
 
-namespace Exercicio1.AlgoritmoGuloso;
+namespace Exercicio1.AlgoritmoBackTracking;
 
 // A crescente informatização dos nossos procedimentos corriqueiros, impulsionada pela infeliz
 // pandemia COVID-19 que nos atingiu nos últimos anos, tornou cada vez mais comum que façamos
