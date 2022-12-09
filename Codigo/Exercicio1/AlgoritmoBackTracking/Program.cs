@@ -42,14 +42,14 @@ internal class Program{
     static void Main(String[] args){
         var listaRotas = new List<Rota>();
         //preenchimento com rotas aleatorias
-        listaRotas.Add(new Rota("Rota1", 80)); // 
-        listaRotas.Add(new Rota("Rota2", 25)); //
-        listaRotas.Add(new Rota("Rota3", 60)); //
-        listaRotas.Add(new Rota("Rota4", 50)); //
-        listaRotas.Add(new Rota("Rota5", 5)); //
-        listaRotas.Add(new Rota("Rota6", 11)); //
-        listaRotas.Add(new Rota("Rota7", 31)); // 
-        listaRotas.Add(new Rota("Rota8", 33)); //
+        listaRotas.Add(new Rota("Rota1", 80)); 
+        listaRotas.Add(new Rota("Rota2", 25)); 
+        listaRotas.Add(new Rota("Rota3", 60)); 
+        listaRotas.Add(new Rota("Rota4", 50)); 
+        listaRotas.Add(new Rota("Rota5", 5)); 
+        listaRotas.Add(new Rota("Rota6", 11)); 
+        listaRotas.Add(new Rota("Rota7", 31));
+        listaRotas.Add(new Rota("Rota8", 33)); 
         listaRotas.Add(new Rota("Rota9", 100));
 
         var listaCaminhoes = new List<Caminhao>();

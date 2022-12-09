@@ -65,22 +65,35 @@ internal class Program{
 
         //Primeiro é necessario ordenar o vetor pelo km de forma descrescente ou crescente;
         var listaRotasOrdenado = listaRotas.OrderByDescending( r => r.comprimentoRota);
-        var i = 0;
         foreach(var rota in listaRotasOrdenado){
-            listaCaminhoes.ElementAt(i).rotaCaminhao.Add(rota);
-            listaCaminhoes.ElementAt(i).totalRota += rota.comprimentoRota;
+            var caminhaoMinRota = getMinRotaCaminhao(listaCaminhoes);
+            caminhaoMinRota.rotaCaminhao.Add(rota);
+            caminhaoMinRota.totalRota += rota.comprimentoRota;
         }
 
         stopwatch.Stop();
 
         foreach (var caminhao in listaCaminhoes){
             Console.WriteLine($"Caminhao: {caminhao.identificador} total Km: {caminhao.totalRota}");
-        //Resposta baseada em guloso se mostra ruim pois ignora circustancias e apenas insere rota no caminhao
-        //Ele apenas irá inserir tudo no primeiro caminhao, tendo em vista que nao há limite de km rodados por caminhao
         }
 
         Console.WriteLine($"Tempo de execucao: {stopwatch.ElapsedMilliseconds}");
         //Media de 1 milisegundo
     }
+
+    //Metodo para receber o caminhao com menor rota
+    public static Caminhao? getMinRotaCaminhao(List<Caminhao> caminhoes){
+        Caminhao caminhaoMinRota = null;
+        var minRota = 9999;
+        foreach (var caminhao in caminhoes){
+            if(caminhao.totalRota < minRota){
+                caminhaoMinRota = caminhao;
+                minRota = caminhao.totalRota;
+            }
+        }
+        return caminhaoMinRota;
+    }
 }
+
+
 
